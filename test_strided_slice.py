@@ -52,5 +52,5 @@ converter.experimental_new_converter = True
 
 tflite_model = converter.convert()
 
-with tf.io.gfile.GFile('strided_slice.tflite', 'wb') as f:
+with tf.io.gfile.GFile('model/strided_slice.tflite', 'wb') as f:
     f.write(tflite_model)
